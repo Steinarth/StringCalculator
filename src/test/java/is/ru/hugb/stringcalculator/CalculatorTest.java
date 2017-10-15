@@ -39,4 +39,13 @@ public class CalculatorTest{
       assertEquals("Negatives not allowed: [-1]", e.getMessage());
     }
   }
+
+  @Test
+  public void testLargerThan1000(){
+    assertEquals(2, Calculator.add("1001,2"));
+  } 
+
+
 }
+
+
