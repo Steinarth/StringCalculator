@@ -7,7 +7,7 @@ public class Calculator {
     if(text.equals( "")) {return 0;}
     if(text.startsWith("//")){
       String newText = text.substring(4); 
-      String[] bb = newText.split(text.substring(2,3));
+      String[] bb = newText.split(",|\n|" + text.substring(2,3));
       return sum(bb);
     }
     if(text.contains(",")){
